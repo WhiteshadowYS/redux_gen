@@ -394,7 +394,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "0b29abf997a3d30770503c3a7d4616303fea8205"
+      resolved-ref: "9cfa0562cf413b5fcc94123e4593625d4726c88c"
       url: "git://github.com/WhiteshadowYS/redux_gen_annotation.git"
     source: git
     version: "0.0.1"
