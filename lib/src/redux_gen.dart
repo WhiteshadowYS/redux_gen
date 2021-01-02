@@ -24,16 +24,16 @@ class ReduxEpicGenerator extends GeneratorForAnnotation<Epic> {
     print('element.inputId: ${buildStep?.inputId}');
     print('element.inputLibrary: ${buildStep?.inputLibrary}');
 
-    _buffer += 'element.displayName: ${element?.displayName}\n';
-    _buffer += 'element.hasFactory: ${element?.hasFactory}\n';
-    _buffer += 'element.id: ${element?.id}\n';
-    _buffer += 'element.name: ${element?.name}\n';
-    _buffer += 'element.location: ${element?.location}\n';
-    _buffer += 'element.library: ${element?.library}\n';
-    _buffer += 'element.librarySource: ${element?.librarySource}\n';
+    _buffer += 'const String element_displayName = ${element?.displayName}\n';
+    _buffer += 'const String element_hasFactory = ${element?.hasFactory}\n';
+    _buffer += 'const String element_id = ${element?.id}\n';
+    _buffer += 'const String element_name = ${element?.name}\n';
+    _buffer += 'const String element_location = ${element?.location}\n';
+    _buffer += 'const String element_library = ${element?.library}\n';
+    _buffer += 'const String element_librarySource = ${element?.librarySource}\n';
 
-    _buffer += 'element.inputId: ${buildStep?.inputId}\n';
-    _buffer += 'element.inputLibrary: ${buildStep?.inputLibrary}\n';
+    _buffer += 'const String element_inputId = ${buildStep?.inputId}\n';
+    _buffer += 'const String element_inputLibrary = ${buildStep?.inputLibrary}\n';
 
     return _buffer.toString();
   }
