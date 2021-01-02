@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      redux_gen|redux_gen_annotation:
+        enabled: true
+
+builders:
+  todo_reporter:
+    target: ":redux_gen"
+    import: "package:redux_gen/builder.dart"
+    builder_factories: ["reduxGenAnnotation"]
+    build_extensions: {".dart": [".redux_gen.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
